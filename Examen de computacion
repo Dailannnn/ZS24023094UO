@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Computación</title>
+    <style>
+        body {
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fimecaf.com%2Fblog%2F2024%2F03%2F27%2Fcomputacion-basica-un-viaje-a-traves-de-la-tecnologia%2F&psig=AOvVaw3Cc3DRuXAFlq4BFopZYIhr&ust=1729051473295000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLC0j-nAj4kDFQAAAAAdAAAAABAI');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        a {
+            display: block;
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .video-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            padding: 20px;
+        }
+
+        .video-popup iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .close-popup {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: red;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Examen de Computación</h1>
+    <p>Aquí encontrarás los recursos relacionados con la entrega del examen.</p>
+
+    <!-- Enlaces de las entradas -->
+    <a href="https://uvmx-my.sharepoint.com/:f:/g/personal/zs24023094_estudiantes_uv_mx/EvtDQkqt-ctJmSqm4Fkaz7ABw7Y4KdqLGJlCkotN3seuwA?e=h4cile" target="_blank">Carpeta compartida</a>
+
+    <a href="https://www.canva.com/design/DAGTmCcfYe4/ZGAo-oYDd_KT2yEN9n6kew/edit?utm_content=DAGTmCcfYe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Infografía</a>
+
+    <a href="#" id="video-link">Video animado</a>
+
+    <!-- Ventana emergente para el video -->
+    <div id="video-popup" class="video-popup">
+        <div class="close-popup" id="close-popup">Cerrar</div>
+        <iframe src="https://uvmx-my.sharepoint.com/personal/zs24023094_estudiantes_uv_mx/_layouts/15/stream.aspx?id=%2Fpersonal%2Fzs24023094%5Festudiantes%5Fuv%5Fmx%2FDocuments%2FVIDEO%20IA%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E8fda1223%2D314f%2D4756%2Dad56%2D871359eb13c0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Leyenda de agradecimiento -->
+    <p>Gracias por visitar la página del examen de computación.</p>
+
+    <script>
+        // Script para manejar la ventana emergente del video
+        document.getElementById('video-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('video-popup').style.display = 'block';
+        });
+
+        document.getElementById('close-popup').addEventListener('click', function() {
+            document.getElementById('video-popup').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
