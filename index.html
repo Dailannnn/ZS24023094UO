@@ -6,102 +6,36 @@
     <title>Examen de Computación</title>
     <style>
         body {
-            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fimecaf.com%2Fblog%2F2024%2F03%2F27%2Fcomputacion-basica-un-viaje-a-traves-de-la-tecnologia%2F&psig=AOvVaw3Cc3DRuXAFlq4BFopZYIhr&ust=1729051473295000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLC0j-nAj4kDFQAAAAAdAAAAABAI');
+            background-image: url('https://imecaf.com/blog/wp-content/uploads/2024/03/computacion-basica.jpg');
             background-size: cover;
-            background-position: center;
+            color: white;
             font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            padding: 50px;
         }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.5em;
-            margin-bottom: 40px;
-        }
-
-        a {
-            display: block;
-            font-size: 1.5em;
-            margin: 20px 0;
-            color: white;
-            text-decoration: none;
-            border: 2px solid white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: background-color 0.3s ease;
-        }
-
-        a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
-
-        .video-popup {
+        #video {
             display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80%;
-            height: 80%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            padding: 20px;
-        }
-
-        .video-popup iframe {
-            width: 100%;
-            height: 100%;
-        }
-
-        .close-popup {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: red;
-            color: white;
-            padding: 5px 10px;
-            cursor: pointer;
-            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <h1>Examen de Computación</h1>
-    <p>Aquí encontrarás los recursos relacionados con la entrega del examen.</p>
+    <p>Este es un examen de computación donde se evaluará tu conocimiento. Asegúrate de revisar cada entrada.</p>
 
-    <!-- Enlaces de las entradas -->
-    <a href="https://uvmx-my.sharepoint.com/:f:/g/personal/zs24023094_estudiantes_uv_mx/EvtDQkqt-ctJmSqm4Fkaz7ABw7Y4KdqLGJlCkotN3seuwA?e=h4cile" target="_blank">Carpeta compartida</a>
+    <h2>Entradas</h2>
+    <ul>
+        <li><a href="https://uvmx-my.sharepoint.com/:f:/g/personal/zs24023094_estudiantes_uv_mx/EvtDQkqt-ctJmSqm4Fkaz7ABw7Y4KdqLGJlCkotN3seuwA?e=h4cile">Carpeta compartida</a></li>
+        <li><a href="https://www.canva.com/design/DAGTmCcfYe4/ZGAo-oYDd_KT2yEN9n6kew/edit?utm_content=DAGTmCcfYe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Infografía</a></li>
+        <li><a href="#" onclick="document.getElementById('video').style.display='block';">Video animado</a></li>
+    </ul>
 
-    <a href="https://www.canva.com/design/DAGTmCcfYe4/ZGAo-oYDd_KT2yEN9n6kew/edit?utm_content=DAGTmCcfYe4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Infografía</a>
-
-    <a href="#" id="video-link">Video animado</a>
-
-    <!-- Ventana emergente para el video -->
-    <div id="video-popup" class="video-popup">
-        <div class="close-popup" id="close-popup">Cerrar</div>
-        <iframe src="https://uvmx-my.sharepoint.com/:v:/g/personal/zs24023094_estudiantes_uv_mx/Ea1MwFuxXntKm3xBHjz6oQkB1Tg3tOQWXeJOPfWuBVPHpA?e=it7QIU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D" allowfullscreen></iframe>
+    <div id="video" style="display:none;">
+        <video width="560" height="315" controls>
+            <source src="https://drive.google.com/uc?export=download&id=1KeNi-FF1usAn914dzhJUEYvbFDSi3565" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+        </video>
     </div>
 
-    <!-- Leyenda de agradecimiento -->
-    <p>Gracias por visitar la página del examen de computación.</p>
-
-    <script>
-        // Script para manejar la ventana emergente del video
-        document.getElementById('video-link').addEventListener('click', function(event) {
-            event.preventDefault();
-            document.getElementById('video-popup').style.display = 'block';
-        });
-
-        document.getElementById('close-popup').addEventListener('click', function() {
-            document.getElementById('video-popup').style.display = 'none';
-        });
-    </script>
+    <footer>
+        <p>¡Gracias por ver la página!</p>
+    </footer>
 </body>
 </html>
